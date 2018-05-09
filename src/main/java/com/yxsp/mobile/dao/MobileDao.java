@@ -18,4 +18,9 @@ public interface MobileDao {
     @Select("select * from mobile where id = #{id}")
     MobileEntity findMobileById(long id);
 
+    @Select("select * from mobile where Mibrw = #{Mibrw}")
+    MobileEntity findMobileByMibrw(boolean Mibrw);
+
+
+
 }

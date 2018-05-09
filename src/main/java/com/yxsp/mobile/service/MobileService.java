@@ -24,8 +24,12 @@ public class MobileService {
         mobileDao.deleteMobileService(id);
     }
 
-    public MobileEntity findMobileByIdServer( long id){
+    public MobileEntity findMobileByIdService( long id){
         return mobileDao.findMobileById(id);
+    }
+
+    public  MobileEntity findMobileByMibrwService( boolean Mibrw){
+        return mobileDao.findMobileByMibrw(Mibrw);
     }
 
 }

@@ -19,9 +19,10 @@ public class MobilecController {
 
 
     @RequestMapping("/find")
-    public MobileEntity index(long id){
-        return mobileService.findMobileByIdServer(id);
+    public MobileEntity findMobileById(long id){
+        return mobileService.findMobileByIdService(id);
     }
+
 
     @RequestMapping(value = "/add",method = RequestMethod.GET)
     public Map<String,Object> addUser(MobileEntity mobile){
