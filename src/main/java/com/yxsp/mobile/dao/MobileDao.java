@@ -20,6 +20,8 @@ public interface MobileDao {
     @Delete("delete from mobile where id=#{id}")
      void deleteMobileService(long id);
 
+
+
     @Select("select * from mobile where id = #{id}")
     MobileEntity findMobileById(long id);
 
