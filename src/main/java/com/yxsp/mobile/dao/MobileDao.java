@@ -3,6 +3,11 @@ package com.yxsp.mobile.dao;
 import com.yxsp.mobile.entity.MobileEntity;
 import org.apache.ibatis.annotations.*;
 
+/**
+ * @author fanyu
+ * @date 2018/05/09
+ */
+
 @Mapper
 public interface MobileDao {
 
